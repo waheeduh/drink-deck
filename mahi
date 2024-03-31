@@ -1,0 +1,9 @@
+UI Element	ID	  Description	                                             Shape	         Explanation
+Text	Text_01 	“DEEK”                                          	    Rectangular	     This could be the main title or brand name of the drink ordering system.
+Text	Text_02 	“Here We Make Delicious Drinks. You Drink Them”     	Rectangular    	This is a slogan or tagline that describes the service offered.
+Text	Text_03 	“Cold Drinks”	                                        Rectangular  	This is a category heading for cold beverages on the menu.
+Text	Text_04 	“Hot Drinks”                                           	Rectangular 	This is a category heading for hot beverages on the menu.
+Text	Text_05  	“Puteti Chal” (Replace with your language)          	Rectangular 	This could be a specific drink name or a button leading to a specific drink section.
+Text	Text_06  	“Toppings”	                                            Rectangular 	This could be a category heading for drink customization options.
+Image	Image_01    	Logo	                                            Circular	    This is likely the logo of the drink ordering system.
+Image	Image_02    	Latte                                           	Rectangular	    This could be an image representing a specific drink or showcasing a category (e.g., all latte options).
