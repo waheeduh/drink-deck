@@ -59,6 +59,14 @@ CREATE TABLE substitutions (
 	substitution_price  DECIMAL(10,2)   
 );
 
+CREATE TABLE UI (
+	ui_id				INT(4) 			PRIMARY KEY 		AUTO_INCREMENT,
+    ui_type				ENUM('text', 'image'),
+    element_contents	VARCHAR(250), 
+    element_shape		VARCHAR(50),
+    element_description	VARCHAR(250)
+);
+
 INSERT INTO drinks (drink_name, drink_description, drink_price, ingredients) VALUES 
 -- COLD DRINKS
 ('Iced Coffee', 'Refreshing iced coffee made with freshly brewed coffee, milk, and ice.', 3.99, 'Coffee, Milk, Ice'),
@@ -178,3 +186,15 @@ INSERT INTO order_details (user_id, drink_id, topping_id, size, sugar_level, sub
 (15, 33, 3, 'Small', 'Less', NULL, 1, 3.99, '2022-05-12'),
 (27, 13, 2, 'Medium', 'Extra', NULL, 1, 1.99, '2024-01-07'),
 (40, 17, NULL, 'Small', 'Regular', 4, 1, 3.99, '2023-08-23');
+
+INSERT INTO UI (ui_type, element_contents, element_shape, element_desciption) VALUES 
+('text', 'DRINK DECK', 'Rectangle', 'Main title or brand name of the drink ordering system.'),
+('text', 'We Make Delicious Drinks. You Drink Them', 'Rectangle', 'Slogan that describes the service offered.'),
+('text', 'Cold Drinks', 'Rectangle', 'Category header for cold beverages on the menu.'),
+('text', 'Hot Drinks', 'Rectangle', 'Category header for hot beverages on the menu.'),
+('text', 'Account', 'Rectangle', 'Title for button that brings a user to their account.'),
+('text', 'Toppings', 'Rectangle', 'Category heading for drink customization options.'),
+('text', 'Substitutions', 'Rectangle', 'Main title or brand name of the drink ordering system.'),
+('image', 'logo.png', 'Circular', 'Image file that contains the logo of Drink Deck.'),
+('image', 'latte.png', 'Rectangle', 'Image file of a latte for the Hot Drinks category.'),
+('image', 'lemonade.png', 'Rectangle', 'Image file of a lemonade for the Cold Drinks category.');
